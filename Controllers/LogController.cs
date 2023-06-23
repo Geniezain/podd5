@@ -23,6 +23,11 @@ namespace LoggingMicroservice.Controllers
         [HttpGet()]
         public ActionResult<IEnumerable<Log>> Get() 
         {
+             if (_context.Logs == null)
+            {
+                return NotFound();
+            }
+
             var logs = _context.Logs.AsQueryable();
             return Ok(logs);
         }
@@ -30,6 +35,12 @@ namespace LoggingMicroservice.Controllers
         [HttpPost]
         public IActionResult PostLog(Log log)
         {
+             if (_context.Logs == null)
+            {
+                return NotFound();
+            }
+
+            
             log.CreatedAt = DateTime.Now;
             _context.Logs.Add(log);
             _context.SaveChanges();
@@ -43,6 +54,15 @@ namespace LoggingMicroservice.Controllers
                       $"Application: {log.Application}\n" +
                       $"LogLevel: {log.LogLevel}\n" +
                       $"Message: {log.Message}\n" +
+                      $"Serverity: {log.Message}\n"+
+                      $"HostName: {log.HostName}\n"+
+                      $"Associated Id: {log.AssociateId}\n"+
+                      $"Technology: {log.Technology}\n"+
+                      $"ModuleName: {log.ModuleName}\n"+
+                      $"FeatureName: {log.FeatureName}\n"+
+                      $"ClassName: {log.ClasName}\n"+
+                      $"ErrorCode: {log.ErrorCode}\n"+
+                      $"Error Message: {log.ErrMessage}\n"+
                       $"----------------------------------\n";
 
     
@@ -60,6 +80,11 @@ namespace LoggingMicroservice.Controllers
         [HttpGet("{id}")]
         public IActionResult GetLog(int id)
         {
+             if (_context.Logs == null)
+            {
+                return NotFound();
+            }
+
             var log = _context.Logs.Find(id);
             if (log == null)
             {

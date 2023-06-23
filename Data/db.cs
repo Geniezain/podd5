@@ -9,6 +9,6 @@ namespace LoggingMicroservice.Data
             Database.EnsureCreated();
         }
 
-        public DbSet<Log> Logs { get; set; }
+        public DbSet<Log>? Logs { get; set; }
     }
 }

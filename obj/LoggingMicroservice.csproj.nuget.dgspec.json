@@ -1,32 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anike\\OneDrive\\Documents\\Cognizant\\Pod5\\LoggingMicroservice\\LoggingMicroservice.csproj": {}
+    "C:\\Users\\91767\\Documents\\GitHub\\podd5\\LoggingMicroservice.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anike\\OneDrive\\Documents\\Cognizant\\Pod5\\LoggingMicroservice\\LoggingMicroservice.csproj": {
+    "C:\\Users\\91767\\Documents\\GitHub\\podd5\\LoggingMicroservice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anike\\OneDrive\\Documents\\Cognizant\\Pod5\\LoggingMicroservice\\LoggingMicroservice.csproj",
+        "projectUniqueName": "C:\\Users\\91767\\Documents\\GitHub\\podd5\\LoggingMicroservice.csproj",
         "projectName": "LoggingMicroservice",
-        "projectPath": "C:\\Users\\anike\\OneDrive\\Documents\\Cognizant\\Pod5\\LoggingMicroservice\\LoggingMicroservice.csproj",
-        "packagesPath": "C:\\Users\\anike\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anike\\OneDrive\\Documents\\Cognizant\\Pod5\\LoggingMicroservice\\obj\\",
+        "projectPath": "C:\\Users\\91767\\Documents\\GitHub\\podd5\\LoggingMicroservice.csproj",
+        "packagesPath": "C:\\Users\\91767\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\91767\\Documents\\GitHub\\podd5\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\anike\\OneDrive\\Documents\\Cognizant\\Pod5\\LoggingMicroservice\\NuGet.Config",
-          "C:\\Users\\anike\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\91767\\Documents\\GitHub\\podd5\\NuGet.Config",
+          "C:\\Users\\91767\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
+          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -37,30 +38,26 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[7.0.4, )"
-            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.7, )"
+              "version": "[6.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.7, )"
+              "version": "[6.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[7.0.7, )"
+              "version": "[6.0.7, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -86,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }
