@@ -1,0 +1,14 @@
+Log Entry: 30-06-2023 09:30:20
+Application: App3
+LogLevel: Error in432532te fdsgjdslj formation 232 dhshdkahk
+Message: An error occ fsfs urred part 322 djsalakjdasl
+Serverity: An error occ fsfs urred part 322 djsalakjdasl
+HostName: NewHost
+Associated Id: 32135
+Technology: dsadas
+ModuleName: dasfaasasf
+FeatureName: dasfasfag
+ClassName: somename class
+ErrorCode: 432532
+Error Message: Some error message
+----------------------------------
