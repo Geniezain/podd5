@@ -47,8 +47,6 @@ namespace LoggingMicroservice.Controllers
             _logger.LogInformation("New log: {@Log}", log);
             
 
-             
-
     
             string logEntry = $"Log Entry: {DateTime.Now}\n" +
                       $"Application: {log.Application}\n" +
@@ -71,11 +69,11 @@ namespace LoggingMicroservice.Controllers
 
              
     Directory.CreateDirectory(directoryPath);
-
-    
     System.IO.File.AppendAllText(filePath, logEntry);
+
+
     return CreatedAtAction(nameof(GetLog), new { id = log.Id }, log);
-        }
+}
 
         [HttpGet("{id}")]
         public IActionResult GetLog(int id)
